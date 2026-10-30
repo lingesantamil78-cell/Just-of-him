@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#6d203d" />
+  <title>Oru Chinna Friendship Gift 💐</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="screen active" id="welcome">
+      <div class="tiny-label">UNAKKAGA ORU CHINNA GIFT · FRIENDSHIP ONLY 🤍</div>
+      <div class="bouquet" aria-label="Flower bouquet">💐</div>
+      <h1>Oru chinna gift...<br><em>konjam padichittu po.</em></h1>
+      <p class="muted">No pressure da. Un friend solla ninaicha sila vishayam mattum.</p>
+      <button class="primary" data-next="gift">Gift open pannu <span>→</span></button>
+    </section>
+
+    <section class="screen" id="gift">
+      <div class="tiny-label">IDHA UNAKKAGA WRAP PANNIRUKKEN 🎀</div>
+      <div class="gift-wrap" id="giftWrap"><div class="gift-bow">🎀</div><div class="gift-box">🎁</div></div>
+      <h2>Oru chinna reminder</h2>
+      <p class="letter-short">Namma old friendship romba miss panren. Random talks, daily updates, sudden calls, silly moments... ellame miss panren. Eppovume pesanum nu kekkala. Aana indha friendship enakku important nu unakku sollanum nu thonuchu.</p>
+      <button class="primary" data-next="questions">Innum konjam paaru <span>→</span></button>
+    </section>
+
+    <section class="screen" id="questions">
+      <div class="tiny-label">KONJAM HONEST-A ANSWER PANNU</div>
+      <h2>Unkitta sila questions...</h2>
+      <p class="muted">Correct answer nu edhuvum illa. Unmaiya thonradha select pannu.</p>
+      <div id="questionCard" class="question-card"></div>
+      <div class="progress"><div id="progressBar"></div></div>
+      <p class="progress-label" id="progressLabel">Question 1 / 10</p>
+      <button class="quiet" id="skipQuestions">Questions skip pannalaam</button>
+    </section>
+
+    <section class="screen" id="letter">
+      <div class="tiny-label">EN MANASULA IRUKKURADHU</div>
+      <h2>Konjam open-ah solren...</h2>
+      <div class="paper">
+        <p>Naan fever nu sonnapo, nee konjam concern kaatuva nu expect pannen. Aana adhu kooda miss aachu. Munnaadi nee enga ponaalum solluva; ippo adhuvum illa. Namma daily enna panrom nu share pannadhu kooda ninnuduchu.</p>
+        <p>Sometimes nee message pannitu phone-a vechittu thoongura maari irukku. Pesanum nu naan wait pannitu iruppen. Munnaadi nee call pannuva; call history-la un calls irukkum. Ippo calls-um illa, andha time-um illa.</p>
+        <p>Unakku time illa nu theriyum. Aana munnaadi spend panna time-la irundhu ippo 5 minutes kooda kashtam nu sonnapo romba hurt aachu. Naan replaced aana maari feel panren nu sonna, adhu argument-ah maaridudhu. Naan overthink panreno nu enakkum sila neram doubt varudhu.</p>
+        <p>Naan videos anuppi, unna miss panren nu explain pannirukken. Aana nee oru thadava kooda namma friendship miss panren nu sollala. Naan enna panren nu nee kekkuradhum illa. Idhellam sollradhu unna blame panna illa; enakku epdi feel aagudhu nu puriya vekka dhaan.</p>
+        <p>Naan un number delete panniten nu sonnapo, nee casual-ah “okay” nu sonnadhu hurt aachu. Adhu unakku perusa theriyama irundhirukkalam. Aana enakku adhu easy-ah eduthukka mudiyala.</p>
+        <p>Naan unna force panni pesa vaikka virumbala. Unakku space venumna eduthuko. Aana friendship rendu per effort-um irundha dhaan nalla irukkum. Naan mattum try panra maari feel aaga koodadhu. Enakku namma friendship lifelong irukkanum; strangers aaga vendaam.</p>
+        <p class="signoff">Idhu love illa da. Pure friendship. Un friend-ah irundhu namma bond-ah miss panra oruthiyoda message mattum. 🤍</p>
+      </div>
+      <button class="primary" data-next="notice">Next <span>→</span></button>
+    </section>
+
+    <section class="screen" id="notice">
+      <div class="tiny-label">OFFICIAL FRIENDSHIP NOTICE 😅</div>
+      <h2>Friendship divorce letter</h2>
+      <div class="paper notice-paper">
+        <p><strong>Subject:</strong> Namma friendship-ku temporary notice.</p>
+        <p>Indha friendship cancel pannala. Unakku un space venumna eduthuko. Naan adha respect panren. Aana silent-ah strangers aagidalaam nu mattum ninaikkadha.</p>
+        <p>Daily full time pesa vendam. Instant reply-um venam. Sometimes oru small update, “epdi irukka?” nu oru message, oru call... ivlo podhum. Effort rendu pakkamum irukkanum.</p>
+        <p>Naan sanda poda illa; namma friendship-a save panna dhaan ivlo explain panren. Nee ready aana honest-ah pesalaam.</p>
+        <p class="signoff">Status: Friendship cancelled illa. Konjam space + konjam mutual effort pending. 🌷</p>
+      </div>
+      <button class="primary" data-next="signature">Seri, last page <span>→</span></button>
+    </section>
+
+    <section class="screen" id="signature">
+      <div class="tiny-label">PADICHITTEN NU MATTUM SOLLALAAM</div>
+      <h2>Oru chinna acknowledgement</h2>
+      <p class="muted">Un name / nickname type pannu. Idhu padichitta nu confirm panna mattum; promise-um illa, agreement-um illa. Reply panna viruppam illenna skip pannalaam.</p>
+      <label class="field-label" for="signatureName">Un name / nickname</label>
+      <input id="signatureName" maxlength="40" placeholder="Inga type pannu..." autocomplete="off" />
+      <label class="field-label" for="replyNote">Enkitta edhavadhu sollanum-na (optional)</label>
+      <textarea id="replyNote" maxlength="500" rows="3" placeholder="Un side-um honest-ah sollalaam..."></textarea>
+      <button class="primary" id="sendReply">Padichitten nu send pannu <span>→</span></button>
+      <p class="save-status" id="saveStatus" role="status"></p>
+      <button class="quiet" data-next="ending">Skip pannalaam</button>
+    </section>
+
+    <section class="screen" id="ending">
+      <div class="bouquet small">🌷</div>
+      <div class="tiny-label">IDHU DHAAN NA SOLLA VANTHADHU</div>
+      <h1>Un space eduthuko.<br><em>Naan respect panren.</em></h1>
+      <p class="letter-short">Namma friendship miss aagumbodhu, pesanum nu thonumbodhu thirumbi vaa. Naan force panna maatten. Aana nee vandha, namma honest-ah pesi friendship-ah continue pannalaam. Take care da. Namma strangers aaga vendaam. 🤍</p>
+      <p class="footer-note">Oru friend innoru friend-kaga senja chinna gift. Friendship only. 💐</p>
+      <button class="quiet" id="restart">Marubadiyum padikkalaam ↺</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
